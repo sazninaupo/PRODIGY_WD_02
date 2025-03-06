@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ff69b4;
+}
+
+#stopwatch {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+}
+
+.buttons button, #toggleTheme {
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#startStop {
+    background: #ffb6c1;
+    color: #fff;
+}
+
+#lap {
+    background: #ffcccb;
+    color: #fff;
+}
+
+#reset {
+    background: #a6c1ee;
+    color: #fff;
+}
+
+#toggleTheme {
+    background: #222;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.buttons button:hover, #toggleTheme:hover {
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+ul li {
+    background: #fce4ec;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #333;
+    color: white;
+}
+
+.dark-mode #stopwatch {
+    color: #fff;
+}
+
+.dark-mode ul li {
+    background: #555;
+    color: white;
+}
